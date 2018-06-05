@@ -1,0 +1,136 @@
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  height: 50px;
+  background-color: #2B2B2D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  position: sticky;
+}
+
+.title {
+  color: #FEC810;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.menubutton {
+  float: right;
+  background-color: #FEC810;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  height: 80%;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropmenu {
+  color: white;
+}
+
+.dropmenuhidden {
+  display: none;
+}
+
+.navbar {
+  height: 250px;
+  width: 100vw;
+  background-color: #2B2B2D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 20px;
+  transition: .5s;
+  position: absolute;
+  z-index: 5;
+}
+
+.hiddenavbar {
+  height: 1px;
+  width: 100vw;;
+  overflow: hidden;
+  transition: .5s;
+  padding: 0 20px;
+  position: absolute;
+  z-index: 4;
+}
+
+.mainimg {
+  height: 760px;
+  width: 100vw;
+  margin: -1px;
+  overflow: hidden;
+  position: static;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 100vw;
+}
+
+#welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+}
+
+#meetyou {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+  color: white;
+}
+
+.differentdisplay {
+  display: none;
+}
+
+/* #morebutton {
+  background-color: #FEC810;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  height: 80%;
+  width: 80px;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%)
+} */
+
+@media(min-width: 600px) {
+    .header {
+      padding: 0 100px;
+    }
+    .navbar {
+      padding: 0 100px;
+    }
+    .hiddenavbar {
+      padding: 0 100px;
+    }
+}
+
+@media(min-width: 1000px) {
+  .menubutton {
+    display: none;
+  }
+  .differentdisplay {
+    width: 450px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+  }
+}
